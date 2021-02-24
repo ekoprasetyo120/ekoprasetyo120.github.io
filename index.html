@@ -1,63 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="assets/image/logo.png">
     <title>Eko Prasetyo</title>
     <style>
-        html, body {
+        html,
+        body {
             width: 100%;
             height: 100%;
             margin: 0;
         }
+
         body {
-            background: linear-gradient(125deg,  #1de840, #1ddde8, #2b1de8);
+            background: linear-gradient(125deg, #1de840, #1ddde8, #2b1de8);
             background-size: 1800% 1800%;
             -webkit-animation: rainbow 18s ease infinite;
             -z-animation: rainbow 18s ease infinite;
             -o-animation: rainbow 18s ease infinite;
             animation: rainbow 18s ease infinite;
         }
-        @font-face{
+
+        @font-face {
             font-family: luckies-guy;
             src: url(assets/font/luckies-guy.ttf);
         }
+
         @-webkit-keyframes rainbow {
-            0%{background-position:0% 82%}
-            50%{background-position:100% 19%}
-            100%{background-position:0% 82%}
+            0% {
+                background-position: 0% 82%
+            }
+
+            50% {
+                background-position: 100% 19%
+            }
+
+            100% {
+                background-position: 0% 82%
+            }
         }
+
         @-moz-keyframes rainbow {
-            0%{background-position:0% 82%}
-            50%{background-position:100% 19%}
-            100%{background-position:0% 82%}
+            0% {
+                background-position: 0% 82%
+            }
+
+            50% {
+                background-position: 100% 19%
+            }
+
+            100% {
+                background-position: 0% 82%
+            }
         }
+
         @-o-keyframes rainbow {
-            0%{background-position:0% 82%}
-            50%{background-position:100% 19%}
-            100%{background-position:0% 82%}
+            0% {
+                background-position: 0% 82%
+            }
+
+            50% {
+                background-position: 100% 19%
+            }
+
+            100% {
+                background-position: 0% 82%
+            }
         }
-        @keyframes rainbow { 
-            0%{background-position:0% 82%}
-            50%{background-position:100% 19%}
-            100%{background-position:0% 82%}
+
+        @keyframes rainbow {
+            0% {
+                background-position: 0% 82%
+            }
+
+            50% {
+                background-position: 100% 19%
+            }
+
+            100% {
+                background-position: 0% 82%
+            }
         }
+
         .center-outer {
             display: table;
             width: 100%;
             height: 100%;
         }
+
         .center-inner {
             display: table-cell;
             vertical-align: middle;
             text-align: center;
         }
+
         .bubbles {
             display: inline-block;
             font-family: arial;
             position: relative;
         }
+
         .bubbles h1 {
             position: relative;
             font-family: luckies-guy;
@@ -65,6 +109,7 @@
             color: #fff;
             z-index: 2;
         }
+
         .bubbles h2 {
             position: relative;
             font-family: luckies-guy;
@@ -72,17 +117,20 @@
             color: #fff;
             z-index: 2;
         }
+
         .bubbles h3 {
             position: relative;
             font-size: 15px;
             color: #fff;
             z-index: 2;
         }
-        .bubbles p{
+
+        .bubbles p {
             color: #fff;
             opacity: 1;
             margin-top: -15px;
         }
+
         .individual-bubble {
             position: absolute;
             border-radius: 100%;
@@ -92,193 +140,189 @@
         }
 
         body {
-        background-color: #121212;
+            background-color: #121212;
         }
 
         #clock {
-        font-family: luckies-guy;
-        color: #ffffff;
-        font-size: 30px;
-        text-align: center;
-        position: absolute;
-        bottom: 8px;
-        right: 16px;
+            font-family: luckies-guy;
+            color: #ffffff;
+            font-size: 30px;
+            text-align: center;
+            position: absolute;
+            bottom: 8px;
+            right: 16px;
         }
     </style>
 </head>
+
 <body>
-    
-<div class="center-outer">
-    <div class="center-inner">
-        <div class="bubbles">
-            <h3>Programmer</h3>
-            <h1>EKO PRASETYO</h1>
-            <p class="lol">Loading....</p>
+
+    <div class="center-outer">
+        <div class="center-inner">
+            <div class="bubbles">
+                <h3>Programmer</h3>
+                <h1>EKO PRASETYO</h1>
+                <p class="lol">0%</p>
+            </div>
         </div>
     </div>
-</div>
 
-<div id="clock"></div>
+    <div id="clock"></div>
 
-<script type="text/javascript" src="assets/jquery/jquery-3.5.0.min.js"></script>
-<script>
-    $(document).ready(function(){
-        var data = -100;
-        var id = setInterval(frame, 25);
-        function frame() {
-            if (data == 0) {
-                clearInterval(id);
-                
-                var id1 = setInterval(frame, 100);
-                function frame() {
-                    if (data == 27) {
-                        clearInterval(id1);
+    <script type="text/javascript" src="assets/jquery/jquery-3.5.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            var data = -100;
+            var id = setInterval(frame, 25);
+            function frame() {
+                if (data == 0) {
+                    clearInterval(id);
 
-                        var id2 = setInterval(frame, 250);
-                        function frame() {
-                            if (data == 35) {
-                                clearInterval(id2);
+                    var id1 = setInterval(frame, 100);
+                    function frame() {
+                        if (data == 27) {
+                            clearInterval(id1);
 
-                                var id3 = setInterval(frame, 50);
-                                function frame() {
-                                    if (data == 65) {
-                                        clearInterval(id3);
+                            var id2 = setInterval(frame, 250);
+                            function frame() {
+                                if (data == 35) {
+                                    clearInterval(id2);
 
-                                        var id4 = setInterval(frame, 200);
-                                        function frame() {
-                                            if (data == 80) {
-                                                clearInterval(id4);
+                                    var id3 = setInterval(frame, 50);
+                                    function frame() {
+                                        if (data == 65) {
+                                            clearInterval(id3);
 
-                                                var id5 = setInterval(frame, 200);
-                                                function frame() {
-                                                    if (data == 93) {
-                                                        clearInterval(id5);
+                                            var id4 = setInterval(frame, 200);
+                                            function frame() {
+                                                if (data == 80) {
+                                                    clearInterval(id4);
 
-                                                        var id6 = setInterval(frame, 1000);
-                                                        function frame() {
-                                                            if (data == 96) {
-                                                                clearInterval(id6);
+                                                    var id5 = setInterval(frame, 200);
+                                                    function frame() {
+                                                        if (data == 93) {
+                                                            clearInterval(id5);
 
-                                                                var id7 = setInterval(frame, 3500);
-                                                                function frame() {
-                                                                    if (data == 98) {
-                                                                        clearInterval(id7);
+                                                            var id6 = setInterval(frame, 1000);
+                                                            function frame() {
+                                                                if (data == 96) {
+                                                                    clearInterval(id6);
 
-                                                                        var id8 = setInterval(frame, 7500);
-                                                                        function frame() {
-                                                                            if (data == 100) {
-                                                                                clearInterval(id8);
+                                                                    var id7 = setInterval(frame, 3500);
+                                                                    function frame() {
+                                                                        if (data == 98) {
+                                                                            clearInterval(id7);
 
-                                                                                var id9 = setInterval(frame, 15);
-                                                                                function frame() {
-                                                                                    clearInterval(id9);
-                                                                                    $("p").text('SELAMAT ANDA TERTIPU HEHE');
+                                                                            var id8 = setInterval(frame, 7500);
+                                                                            function frame() {
+                                                                                if (data == 100) {
+                                                                                    clearInterval(id8);
+
+                                                                                    var id9 = setInterval(frame, 15);
+                                                                                    function frame() {
+                                                                                        clearInterval(id9);
+                                                                                        $("p").text('SELAMAT ANDA TERTIPU HEHE');
+                                                                                    }
+                                                                                } else {
+                                                                                    data++;
+                                                                                    $("p").text(data + '%');
                                                                                 }
-                                                                            } else {
-                                                                                data++;
-                                                                                $("p").text(data + '%');
                                                                             }
+                                                                        } else {
+                                                                            data++;
+                                                                            $("p").text(data + '%');
                                                                         }
-                                                                    } else {
-                                                                        data++;
-                                                                        $("p").text(data + '%');
                                                                     }
+                                                                } else {
+                                                                    data++;
+                                                                    $("p").text(data + '%');
                                                                 }
-                                                            } else {
-                                                                data++;
-                                                                $("p").text(data + '%');
                                                             }
+                                                        } else {
+                                                            data++;
+                                                            $("p").text(data + '%');
                                                         }
-                                                    } else {
-                                                        data++;
-                                                        $("p").text(data + '%');
                                                     }
+                                                } else {
+                                                    data++;
                                                 }
-                                            } else {
-                                                data++;
                                             }
+                                        } else {
+                                            data++;
+                                            $("p").text(data + '%');
                                         }
-                                    } else {
-                                        data++;
-                                        $("p").text(data + '%');
                                     }
-                                }
 
-                            } else {
-                                data++;
-                                $("p").text(data + '%');
+                                } else {
+                                    data++;
+                                    $("p").text(data + '%');
+                                }
                             }
+                            data++;
+                        } else {
+                            data++;
+                            $("p").text(data + '%');
                         }
-                        data++;
-                    } else {
-                        data++;
-                        $("p").text(data + '%');
                     }
+                } else {
+                    data++;
                 }
-            } else {
-                data++;
+            }
+
+        });
+        jQuery(document).ready(function ($) {
+            var bArray = [];
+            var sArray = [4, 6, 8, 10];
+
+            for (var i = 0; i < $(".bubbles").width(); i++) {
+                bArray.push(i);
+            }
+
+            function randomValue(arr) {
+                return arr[Math.floor(Math.random() * arr.length)];
+            }
+
+            setInterval(function () {
+                var size = randomValue(sArray);
+                $(".bubbles").append(
+                    '<div class="individual-bubble" style="left: ' +
+                    randomValue(bArray) +
+                    "px; width: " +
+                    size +
+                    "px; height:" +
+                    size +
+                    'px;"></div>'
+                );
+                $(".individual-bubble").animate(
+                    {
+                        bottom: "100%",
+                        opacity: "-=0.7"
+                    },
+                    3000,
+                    function () {
+                        $(this).remove();
+                    }
+                );
+            }, 350);
+        });
+
+        function currentTime() {
+            var date = new Date(); /* creating object of Date class */
+            document.getElementById("clock").innerText = date; /* adding time to the div */
+            var t = setTimeout(function () { currentTime() }, 1000); /* setting timer */
+        }
+
+        function updateTime(k) {
+            if (k < 10) {
+                return "0" + k;
+            }
+            else {
+                return k;
             }
         }
-        
-    });
-    jQuery(document).ready(function ($) {
-        var bArray = [];
-        var sArray = [4, 6, 8, 10];
 
-        for (var i = 0; i < $(".bubbles").width(); i++) {
-            bArray.push(i);
-        }
-
-        function randomValue(arr) {
-            return arr[Math.floor(Math.random() * arr.length)];
-        }
-
-        setInterval(function () {
-            var size = randomValue(sArray);
-            $(".bubbles").append(
-                '<div class="individual-bubble" style="left: ' +
-                randomValue(bArray) +
-                "px; width: " +
-                size +
-                "px; height:" +
-                size +
-                'px;"></div>'
-            );
-            $(".individual-bubble").animate(
-                {
-                    bottom: "100%",
-                    opacity: "-=0.7"
-                },
-                3000,
-                function () {
-                    $(this).remove();
-                }
-            );
-        }, 350);
-    });
-
-    function currentTime() {
-  var date = new Date(); /* creating object of Date class */
-  var hour = date.getHours();
-  var min = date.getMinutes();
-  var sec = date.getSeconds();
-  hour = updateTime(hour);
-  min = updateTime(min);
-  sec = updateTime(sec);
-  document.getElementById("clock").innerText = hour + " : " + min + " : " + sec; /* adding time to the div */
-    var t = setTimeout(function(){ currentTime() }, 1000); /* setting timer */
-}
-
-function updateTime(k) {
-  if (k < 10) {
-    return "0" + k;
-  }
-  else {
-    return k;
-  }
-}
-
-currentTime(); /* calling currentTime() function to initiate the process */
-</script>
+        currentTime(); /* calling currentTime() function to initiate the process */
+    </script>
 </body>
-</html>   
+
+</html>
